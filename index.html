@@ -1,0 +1,1183 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>酒色蝌蚪91-独立影像与文字档案</title>
+<meta name="description" content="酒色蝌蚪91是一份独立影像与文字档案，整理短片放映、创作者访谈、器材笔记与放映现场记录。每期标注版本、日期与来源，方便按条目检索与核对。">
+<meta name="keywords" content="酒色蝌蚪91">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151a2b'/%3E%3Cellipse cx='32' cy='34' rx='14' ry='17' fill='%23e0a458'/%3E%3Cellipse cx='26' cy='30' rx='5' ry='7' fill='%23151a2b'/%3E%3Cellipse cx='38' cy='30' rx='5' ry='7' fill='%23151a2b'/%3E%3Cpath d='M32 32 q-6 20 2 26' stroke='%23151a2b' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#151a2b;
+  --ink-2:#2c3450;
+  --paper:#f4f1ea;
+  --paper-2:#fbf9f4;
+  --line:#d9d2c3;
+  --amber:#c98a2e;
+  --amber-soft:#f0dcb4;
+  --teal:#2f6f6a;
+  --rose:#9c4a5a;
+  --muted:#6c6558;
+  --radius:14px;
+  --radius-s:8px;
+  --shadow:0 8px 24px rgba(21,26,43,.10);
+  --shadow-s:0 2px 8px rgba(21,26,43,.07);
+  --gap:clamp(14px,2.4vw,26px);
+  --f-head:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,serif;
+  --f-body:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --sticky-h:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--f-body);
+  font-size:16px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{font-family:var(--f-head);line-height:1.35;margin:0}
+p{margin:0 0 .8em}
+ul,ol{margin:0 0 .8em;padding-left:1.2em}
+li{margin:.25em 0}
+.wrap{width:min(1180px,94vw);margin:0 auto}
+:target{scroll-margin-top:var(--sticky-h)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:8px;top:8px;z-index:999;background:#fff;padding:8px 14px;border-radius:6px;border:2px solid var(--teal)}
+
+/* ---------- 吸顶公告 + 页头 ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:var(--ink);
+  color:#efe9db;
+  font-size:13.5px;
+}
+.topbar-inner{
+  display:flex;gap:14px;align-items:center;flex-wrap:wrap;
+  padding:7px 0;
+}
+.topbar b{color:var(--amber-soft);font-weight:600}
+.pulse{
+  width:8px;height:8px;border-radius:50%;background:var(--amber);
+  box-shadow:0 0 0 0 rgba(201,138,46,.6);
+  animation:pulse 2.4s infinite;flex:none;
+}
+@keyframes pulse{70%{box-shadow:0 0 0 7px rgba(201,138,46,0)}100%{box-shadow:0 0 0 0 rgba(201,138,46,0)}}
+.topbar .sep{opacity:.4}
+
+header.site-head{
+  position:sticky;top:33px;z-index:49;
+  background:rgba(251,249,244,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.head-row{display:flex;align-items:center;gap:18px;padding:10px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:40px;height:40px;flex:none}
+.brand-name{font-family:var(--f-head);font-size:21px;font-weight:700;letter-spacing:.02em;color:var(--ink)}
+.brand-sub{display:block;font-family:var(--f-body);font-size:11px;color:var(--muted);letter-spacing:.14em;font-weight:400}
+nav.mainnav{margin-left:auto}
+.nav-toggle{
+  display:none;align-items:center;gap:8px;
+  background:var(--paper-2);border:1px solid var(--line);
+  color:var(--ink);padding:8px 14px;border-radius:var(--radius-s);
+  font-size:14px;cursor:pointer;font-family:var(--f-body);
+}
+.nav-toggle:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.nav-toggle svg{width:16px;height:16px}
+.mainnav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+.mainnav a{
+  display:block;padding:7px 11px;border-radius:var(--radius-s);
+  color:var(--ink-2);font-size:14px;
+}
+.mainnav a:hover{background:var(--amber-soft);text-decoration:none;color:var(--ink)}
+.search{display:flex;align-items:center;gap:6px;position:relative}
+.search input{
+  width:150px;padding:7px 10px;border:1px solid var(--line);
+  border-radius:var(--radius-s);background:#fff;font-family:var(--f-body);font-size:14px;color:var(--ink);
+}
+.search input:focus{outline:2px solid var(--teal);outline-offset:1px;border-color:var(--teal)}
+.search button{
+  border:1px solid var(--ink);background:var(--ink);color:#f4f1ea;
+  padding:7px 12px;border-radius:var(--radius-s);cursor:pointer;font-size:14px;font-family:var(--f-body);
+}
+.search button:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.search-feedback{
+  position:absolute;right:0;top:calc(100% + 6px);
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);
+  box-shadow:var(--shadow-s);padding:8px 12px;font-size:13px;color:var(--muted);
+  white-space:nowrap;display:none;
+}
+.search-feedback.on{display:block}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1200px 420px at 82% -12%, rgba(201,138,46,.20), transparent 62%),
+    radial-gradient(700px 340px at 6% 108%, rgba(47,111,106,.16), transparent 66%),
+    var(--paper-2);
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.06fr .94fr;gap:var(--gap);
+  align-items:center;padding:clamp(30px,5vw,62px) 0;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:.16em;color:var(--teal);
+  border:1px solid rgba(47,111,106,.35);border-radius:999px;padding:4px 12px;margin-bottom:16px;
+}
+h1{
+  font-size:clamp(30px,5.2vw,52px);
+  letter-spacing:.01em;
+  margin-bottom:14px;
+}
+h1 .mark{color:var(--amber)}
+.hero-desc{font-size:clamp(15px,1.5vw,17px);color:var(--ink-2);max-width:34em;margin-bottom:20px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.btn{
+  display:inline-block;padding:11px 20px;border-radius:999px;
+  font-size:15px;font-family:var(--f-body);border:1px solid transparent;cursor:pointer;
+}
+.btn-primary{background:var(--ink);color:var(--paper-2)}
+.btn-primary:hover{text-decoration:none;transform:translateY(-2px);transition:transform .18s}
+.btn-ghost{border-color:var(--line);background:#fff;color:var(--ink-2)}
+.btn-ghost:hover{text-decoration:none;border-color:var(--teal);color:var(--teal)}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;font-size:13.5px;color:var(--muted)}
+.hero-stats b{display:block;font-family:var(--f-head);font-size:23px;color:var(--ink);line-height:1.2}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 16px 30px rgba(21,26,43,.16))}
+.art-note{
+  position:absolute;left:2%;bottom:2%;
+  background:rgba(251,249,244,.92);border:1px solid var(--line);
+  border-radius:var(--radius-s);padding:6px 12px;font-size:12px;color:var(--muted);
+}
+
+/* ---------- 主布局 ---------- */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 296px;gap:calc(var(--gap) + 6px);padding:calc(var(--gap) + 8px) 0 8px}
+.layout main{min-width:0}
+aside.rail{min-width:0}
+
+section.block{margin-bottom:calc(var(--gap) + 14px)}
+.block-head{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:14px;padding-bottom:9px;border-bottom:2px solid var(--ink)}
+h2{font-size:clamp(21px,2.5vw,27px);letter-spacing:.01em}
+.block-head .hint{font-size:13px;color:var(--muted);margin-left:auto;font-family:var(--f-body)}
+h3{font-size:clamp(17px,1.9vw,19.5px);margin-bottom:8px}
+h4{font-size:15.5px;margin-bottom:6px;font-family:var(--f-body);font-weight:700}
+.lead{color:var(--ink-2)}
+
+/* 卡片网格 */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;
+  box-shadow:var(--shadow-s);
+  transition:transform .18s,box-shadow .18s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card figure{margin:0;position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--amber-soft)}
+.card figure img{width:100%;height:100%;object-fit:cover}
+.card .tagline{
+  position:absolute;left:10px;top:10px;background:rgba(21,26,43,.86);color:var(--paper-2);
+  font-size:11.5px;padding:3px 9px;border-radius:999px;letter-spacing:.05em;
+}
+.card-body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card-body p{font-size:14px;color:var(--ink-2);margin:0}
+.card-meta{font-size:12.5px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:8px;border-top:1px dashed var(--line)}
+
+/* 紧凑列表 */
+.tight-list{list-style:none;padding:0;margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.tight-list li{
+  display:grid;grid-template-columns:74px minmax(0,1fr) auto;gap:12px;align-items:baseline;
+  padding:12px 16px;border-bottom:1px solid var(--line);
+}
+.tight-list li:last-child{border-bottom:0}
+.tight-list .date{font-family:var(--f-head);font-size:13.5px;color:var(--amber);white-space:nowrap}
+.tight-list .t{font-weight:600;color:var(--ink);font-size:15px}
+.tight-list .t a{color:var(--ink)}
+.tight-list .t a:hover{color:var(--teal)}
+.tight-list .src{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.tight-list .sub{display:block;font-weight:400;font-size:13.5px;color:var(--ink-2);margin-top:2px}
+
+/* 频道索引 */
+.channels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.channels a{
+  display:block;padding:12px 14px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-s);color:var(--ink);font-size:14.5px;
+  transition:background .16s,border-color .16s,transform .16s;
+}
+.channels a:hover{background:var(--amber-soft);border-color:var(--amber);text-decoration:none;transform:translateY(-2px)}
+.channels a span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+
+/* 深度解析 */
+.feature{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(18px,3vw,34px);box-shadow:var(--shadow-s);
+}
+.feature h2{border:0;padding:0}
+.feature .kicker{font-size:12.5px;letter-spacing:.16em;color:var(--rose);margin-bottom:8px}
+.feature h3{margin-top:26px;padding-top:18px;border-top:1px solid var(--line)}
+.feature h3:first-of-type{border-top:0;padding-top:4px;margin-top:16px}
+.feature p{max-width:62ch}
+.claim{
+  border-left:4px solid var(--amber);background:#fdf8ee;
+  padding:12px 16px;margin:14px 0;border-radius:0 var(--radius-s) var(--radius-s) 0;
+}
+.claim strong{font-family:var(--f-head);font-size:16.5px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius-s);overflow:hidden;margin:14px 0}
+.compare > div{padding:14px 16px}
+.compare > div:first-child{background:#f7f4ec;border-right:1px solid var(--line)}
+.compare h4{font-size:13px;letter-spacing:.1em;color:var(--muted);margin-bottom:6px}
+.compare ul{padding-left:1.1em;margin:0;font-size:14px}
+table.data{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0}
+table.data caption{text-align:left;font-size:12.5px;color:var(--muted);padding-bottom:6px}
+table.data th,table.data td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+table.data th{background:#f7f4ec;font-family:var(--f-body);font-weight:700}
+table.data td.num{font-variant-numeric:tabular-nums}
+
+/* 步骤 */
+.steps{list-style:none;counter-reset:st;padding:0;margin:0;display:grid;gap:12px}
+.steps li{
+  counter-increment:st;position:relative;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);
+  padding:14px 16px 14px 58px;
+}
+.steps li::before{
+  content:counter(st);position:absolute;left:14px;top:13px;
+  width:30px;height:30px;border-radius:50%;
+  background:var(--ink);color:var(--amber-soft);
+  display:grid;place-items:center;font-family:var(--f-head);font-size:15px;
+}
+.steps li b{display:block;margin-bottom:2px}
+.steps li span{font-size:14px;color:var(--ink-2)}
+
+/* 问答 */
+details.faq{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);
+  padding:0 16px;margin-bottom:9px;
+}
+details.faq[open]{border-color:var(--amber)}
+details.faq summary{
+  cursor:pointer;padding:13px 0;font-weight:600;font-size:15px;color:var(--ink);
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"＋";color:var(--amber);font-size:17px;flex:none}
+details.faq[open] summary::after{content:"－"}
+details.faq summary:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+details.faq .ans{padding:0 0 14px;font-size:14.5px;color:var(--ink-2)}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.comment{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 16px;box-shadow:var(--shadow-s);
+}
+.comment header{display:flex;align-items:center;gap:9px;margin-bottom:6px;flex-wrap:wrap}
+.avatar{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-head);font-size:14px;color:#fff;flex:none}
+.comment .who{font-weight:700;font-size:14px}
+.comment .when{font-size:12.5px;color:var(--muted)}
+.comment .on{font-size:12.5px;color:var(--teal);margin-left:auto}
+.comment p{margin:0;font-size:14.5px;color:var(--ink-2)}
+.comment.tone-crit{border-left:3px solid var(--rose)}
+.comment.tone-neutral{border-left:3px solid var(--teal)}
+
+/* 标签 */
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tags a{
+  display:inline-block;padding:6px 13px;background:#fff;border:1px solid var(--line);
+  border-radius:999px;font-size:13.5px;color:var(--ink-2);
+}
+.tags a:hover{border-color:var(--amber);background:var(--amber-soft);color:var(--ink);text-decoration:none}
+
+/* 侧栏 */
+.rail-box{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;margin-bottom:var(--gap);box-shadow:var(--shadow-s);
+}
+.rail-box h3{font-size:15.5px;margin-bottom:10px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+.rail-nav{list-style:none;padding:0;margin:0;font-size:14px}
+.rail-nav a{
+  display:block;padding:6px 10px;border-left:3px solid transparent;color:var(--ink-2);border-radius:0 6px 6px 0;
+}
+.rail-nav a:hover{background:#f7f4ec;text-decoration:none}
+.rail-nav a.active{border-left-color:var(--amber);background:#fdf8ee;color:var(--ink);font-weight:600}
+.rail-list{list-style:none;padding:0;margin:0;font-size:14px}
+.rail-list li{padding:8px 0;border-bottom:1px dashed var(--line)}
+.rail-list li:last-child{border-bottom:0}
+.rail-list a{color:var(--ink-2)}
+.rail-list .d{display:block;font-size:12px;color:var(--muted)}
+.timeline{list-style:none;padding:0;margin:0;position:relative;font-size:14px}
+.timeline::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.timeline li{position:relative;padding:0 0 13px 20px}
+.timeline li::before{content:"";position:absolute;left:0;top:7px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:3px solid var(--amber)}
+.timeline b{display:block;font-size:14px;color:var(--ink)}
+.timeline span{font-size:12.5px;color:var(--muted)}
+
+/* 排行榜 */
+.rank{list-style:none;counter-reset:rk;padding:0;margin:0}
+.rank li{
+  counter-increment:rk;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;
+  align-items:center;padding:11px 14px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-s);margin-bottom:8px;
+}
+.rank li::before{
+  content:counter(rk);font-family:var(--f-head);font-size:17px;color:var(--amber);
+  grid-row:span 2;width:34px;text-align:center;
+}
+.rank .name{font-weight:600;font-size:15px}
+.rank .desc{font-size:13px;color:var(--muted);grid-column:2}
+.rank .val{font-variant-numeric:tabular-nums;font-size:13.5px;color:var(--teal);grid-row:span 2}
+
+/* 引语 */
+.pull{
+  margin:16px 0;padding:18px 22px;background:var(--ink);color:#efe9db;
+  border-radius:var(--radius);position:relative;
+}
+.pull p{font-family:var(--f-head);font-size:clamp(16px,2vw,19px);margin:0 0 8px}
+.pull cite{font-style:normal;font-size:13px;color:var(--amber-soft)}
+
+/* 事件时间线（主内容内） */
+.events{display:grid;gap:0;border-left:2px solid var(--line);margin-left:6px;padding-left:20px}
+.events .ev{position:relative;padding-bottom:16px}
+.events .ev::before{content:"";position:absolute;left:-27px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--teal);border:3px solid var(--paper)}
+.events .ev time{font-size:12.5px;color:var(--teal);letter-spacing:.04em}
+.events .ev b{display:block;font-size:15px;margin-top:1px}
+.events .ev p{font-size:14px;color:var(--ink-2);margin:2px 0 0}
+
+/* 页脚 */
+footer.site-foot{
+  margin-top:calc(var(--gap) + 18px);background:var(--ink);color:#cfc8b8;
+  padding:clamp(30px,4.4vw,52px) 0 22px;font-size:14px;
+}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:var(--gap)}
+footer .b-name{font-family:var(--f-head);font-size:20px;color:#f4f1ea;margin-bottom:8px}
+footer .b-desc{font-size:13.5px;color:#b8b0a0;max-width:24em;line-height:1.7}
+footer h4{color:#f4f1ea;font-size:14px;margin-bottom:9px;letter-spacing:.05em}
+footer ul{list-style:none;padding:0;margin:0}
+footer ul a{color:#cfc8b8;font-size:13.5px}
+footer ul a:hover{color:var(--amber-soft)}
+.foot-note{
+  border-top:1px solid rgba(244,241,234,.16);margin-top:26px;padding-top:16px;
+  display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;
+  font-size:12.5px;color:#a49c8c;
+}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:18px;z-index:60;
+  width:44px;height:44px;border-radius:50%;
+  background:var(--ink);color:var(--amber-soft);border:1px solid rgba(240,220,180,.4);
+  display:none;place-items:center;cursor:pointer;box-shadow:var(--shadow);
+}
+#toTop.show{display:grid}
+#toTop:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+#toTop svg{width:18px;height:18px}
+
+/* 响应式 */
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr}
+  aside.rail{order:2}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .channels{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{max-width:520px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-toggle{display:inline-flex;order:3}
+  nav.mainnav{order:5;flex-basis:100%;display:none}
+  nav.mainnav.open{display:block}
+  .mainnav ul{flex-direction:column;gap:2px;padding-bottom:10px}
+  .search{order:4}
+  header.site-head{top:33px}
+}
+@media (max-width:640px){
+  body{font-size:15.5px}
+  .cards{grid-template-columns:1fr}
+  .channels{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tight-list li{grid-template-columns:1fr;gap:3px}
+  .tight-list .src{white-space:normal}
+  .compare{grid-template-columns:1fr}
+  .compare > div:first-child{border-right:0;border-bottom:1px solid var(--line)}
+  .foot-grid{grid-template-columns:1fr}
+  .search input{width:120px}
+  .topbar-inner{font-size:12.5px}
+  .rank li{grid-template-columns:28px minmax(0,1fr);}
+  .rank .val{grid-column:2;grid-row:auto;justify-self:start}
+  #toTop{width:40px;height:40px;right:12px;bottom:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主内容</a>
+
+<!-- 吸顶公告条 + 页头 共用吸顶区 -->
+<div class="topbar" id="notice">
+  <div class="wrap topbar-inner">
+    <span class="pulse" aria-hidden="true"></span>
+    <span><b>酒色蝌蚪91</b> 第 14 期放映单已上线：11 月 6 日「雨夜短片合辑」7 部，含 2 部 2026 重制版。</span>
+    <span class="sep" aria-hidden="true">|</span>
+    <span>器材笔记新增 Sony FX3 低照度实拍参数表，更新于 11 月 4 日。</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="/#hero" aria-label="酒色蝌蚪91 首页">
+      <svg viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+        <rect width="64" height="64" rx="14" fill="#151a2b"/>
+        <ellipse cx="32" cy="35" rx="13" ry="16" fill="#e0a458"/>
+        <ellipse cx="27" cy="31" rx="4.4" ry="6.4" fill="#151a2b"/>
+        <ellipse cx="37" cy="31" rx="4.4" ry="6.4" fill="#151a2b"/>
+        <path d="M32 33 q-6 19 2 25" stroke="#151a2b" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <circle cx="26" cy="28.5" r="1.5" fill="#f4f1ea"/>
+        <circle cx="36" cy="28.5" r="1.5" fill="#f4f1ea"/>
+        <path d="M14 22 q6 -9 15 -9" stroke="#2f6f6a" stroke-width="2" fill="none" stroke-linecap="round" opacity=".85"/>
+      </svg>
+      <span>
+        <span class="brand-name">酒色蝌蚪91</span>
+        <span class="brand-sub">独立影像档案 · 第 14 期</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainnav">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3h14M1 8h14M1 13h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      频道
+    </button>
+    <nav class="mainnav" id="mainnav" aria-label="主题导航">
+      <ul>
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#picks">精选放映</a></li>
+        <li><a href="/#latest">最新更新</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+      </ul>
+    </nav>
+    <form class="search" id="searchForm" role="search">
+      <label for="q" class="skip">站内搜索</label>
+      <input id="q" name="q" type="search" placeholder="搜条目、器材、放映" autocomplete="off">
+      <button type="submit">查找</button>
+      <span class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></span>
+    </form>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">短片 · 器材 · 放映现场</span>
+      <h1>酒色蝌蚪91</h1>
+      <p class="hero-desc">一份按条目归档的独立影像记录：每部短片标出拍摄机型、片长、放映日期与可核对来源；每场放映留着到场人数、拷贝格式与观众提问原话。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#picks">看本期 7 部短片</a>
+        <a class="btn btn-ghost" href="/#guide">按器材查笔记</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>91</b>已归档条目</div>
+        <div><b>14</b>放映期次</div>
+        <div><b>23</b>器材笔记</div>
+        <div><b>11-06</b>最近一场</div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 520 400" role="img" aria-label="抽象构图：放映机光束穿过雨幕，落在蝌蚪形光斑上">
+        <defs>
+          <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0.3">
+            <stop offset="0" stop-color="#c98a2e" stop-opacity=".55"/>
+            <stop offset="1" stop-color="#c98a2e" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#fbf9f4"/>
+            <stop offset="1" stop-color="#e6ddc9"/>
+          </linearGradient>
+          <pattern id="rain" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+            <line x1="0" y1="0" x2="0" y2="14" stroke="#2f6f6a" stroke-width="1.6" opacity=".28"/>
+          </pattern>
+        </defs>
+        <rect x="0" y="0" width="520" height="400" rx="20" fill="#efe9db"/>
+        <rect x="0" y="120" width="520" height="280" rx="20" fill="url(#rain)"/>
+        <polygon points="120,196 430,108 430,300 120,236" fill="url(#beam)"/>
+        <rect x="60" y="176" width="74" height="80" rx="10" fill="#151a2b"/>
+        <circle cx="97" cy="216" r="17" fill="#e0a458"/>
+        <circle cx="97" cy="216" r="8" fill="#fbf9f4"/>
+        <rect x="336" y="80" width="150" height="196" rx="8" fill="url(#screen)" stroke="#d9d2c3"/>
+        <ellipse cx="404" cy="168" rx="26" ry="32" fill="#e0a458"/>
+        <ellipse cx="394" cy="158" rx="7" ry="10" fill="#151a2b"/>
+        <ellipse cx="414" cy="158" rx="7" ry="10" fill="#151a2b"/>
+        <path d="M404 170 q-12 34 4 46" stroke="#151a2b" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+        <path d="M404 216 q18 8 26 26" stroke="#2f6f6a" stroke-width="3.4" fill="none" stroke-linecap="round" opacity=".8"/>
+        <circle cx="452" cy="112" r="5" fill="#9c4a5a"/>
+        <circle cx="360" cy="248" r="4" fill="#2f6f6a"/>
+        <circle cx="196" cy="86" r="4" fill="#c98a2e"/>
+        <path d="M40 348 h440" stroke="#151a2b" stroke-width="2" opacity=".25"/>
+        <text x="40" y="378" font-family="Georgia,serif" font-size="17" fill="#6c6558" letter-spacing="2">REEL 14 · 16mm / 数字双版本</text>
+      </svg>
+      <span class="art-note">构图：16mm 放映机 · 雨幕 · 蝌蚪光斑</span>
+    </div>
+  </div>
+</section>
+
+<div class="wrap layout">
+  <main id="main">
+
+    <!-- 1 领域概览 -->
+    <section class="block" id="overview" aria-labelledby="h-overview">
+      <div class="block-head">
+        <h2 id="h-overview">领域概览：短片放映与器材记录怎么排</h2>
+        <span class="hint">归档口径说明</span>
+      </div>
+      <p class="lead">一个条目进入档案，需要同时具备四项内容：片名与导演、片长与画幅、拍摄机型或胶片型号、一次公开放映的时间与地点。缺任何一项，就只放在「筹备中」列表，不编号。截至 11 月 8 日，编号 001 到 091 全部满足四项；筹备中的 12 条最短只写了片名与大致片长。</p>
+      <p>条目分三类。短片类占 57 条，时长在 3 分 40 秒到 28 分钟之间，多数为 12 至 16 分钟。器材类占 23 条，记录实拍参数与失败尝试，例如 FX3 在 12800 ISO 下噪点可控的实测结论来自 9 月 27 日一次夜拍。现场类占 11 条，记录放映设备、拷贝格式、到场人数和问答环节的原话。</p>
+      <p>编号不按时间顺序重排。补录的旧片使用「编号+年份」标注，例如 037（2024），避免与当年新收条目混淆。检索时输入编号即可直达条目页，编号前缀 0 可省略。</p>
+    </section>
+
+    <!-- 2 精选内容推荐 -->
+    <section class="block" id="picks" aria-labelledby="h-picks">
+      <div class="block-head">
+        <h2 id="h-picks">精选内容推荐：本期七部短片与三篇器材笔记</h2>
+        <span class="hint">按放映单顺序</span>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/jiuse-frog-01/640/400" width="640" height="400" loading="lazy" alt="雨夜巷道中一名撑伞者的背影，路灯在积水里形成倒影">
+            <span class="tagline">短片 · 16mm</span>
+          </figure>
+          <div class="card-body">
+            <h3>《雨巷第七夜》</h3>
+            <p>导演林望，片长 14 分 20 秒，1.66:1 画幅。2026 年 10 月 18 日首映于城南旧仓库，用 16mm 反转片拍摄，拷贝为 B 卷。</p>
+            <div class="card-meta"><span>编号 088</span><span>10-18 首映</span><span>观众 63 人</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/jiuse-frog-02/640/400" width="640" height="400" loading="lazy" alt="室内工作台上摊开的胶片卷与剪辑标记笔">
+            <span class="tagline">短片 · 数字</span>
+          </figure>
+          <div class="card-body">
+            <h3>《旧桥三次曝光》</h3>
+            <p>导演周迟，片长 21 分钟。三次曝光分别用 Bolex 与 FX3 完成，声音为现场同期，未做对白补录。</p>
+            <div class="card-meta"><span>编号 089</span><span>10-25 放映</span><span>拷贝 DCP</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/jiuse-frog-03/640/400" width="640" height="400" loading="lazy" alt="低照度拍摄现场的监视器画面与三脚架">
+            <span class="tagline">器材 · 低照度</span>
+          </figure>
+          <div class="card-body">
+            <h3>FX3 双原生 ISO 实拍对照</h3>
+            <p>12800 ISO 与 800 ISO 在 11 月 2 日同一场景各拍 40 秒，后期统一降噪强度，记录高光滚降差异。</p>
+            <div class="card-meta"><span>笔记 21</span><span>11-02 实测</span><span>镜头 35mm T1.5</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/jiuse-frog-04/640/400" width="640" height="400" loading="lazy" alt="老式放映机灯箱与散落的胶片接片胶带">
+            <span class="tagline">现场 · 放映</span>
+          </figure>
+          <div class="card-body">
+            <h3>11 月 6 日雨夜合辑</h3>
+            <p>7 部短片连映，总长 96 分钟，中场休息 12 分钟。到场 71 人，其中 9 人留下参加问答。</p>
+            <div class="card-meta"><span>第 14 期</span><span>11-06</span><span>场地 北岸放映厅</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/jiuse-frog-05/640/400" width="640" height="400" loading="lazy" alt="剪辑软件时间线上的多轨音频与标记点">
+            <span class="tagline">方法 · 剪辑</span>
+          </figure>
+          <div class="card-body">
+            <h3>同期声先行的剪法</h3>
+            <p>导演姜禾给出 3 条规则：先定点声源，再剪画面，最后补环境。她用 14 分钟样片做了对照。</p>
+            <div class="card-meta"><span>访谈 06</span><span>10-29 记录</span><span>样片 3 版</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/jiuse-frog-06/640/400" width="640" height="400" loading="lazy" alt="仓库改放映厅的临时座椅与白色幕布">
+            <span class="tagline">现场 · 场地</span>
+          </figure>
+          <div class="card-body">
+            <h3>仓库改放映厅的声学账</h3>
+            <p>北岸放映厅面积 180 平方米，混响实测 1.9 秒。加挂 12 块吸音板后降到 1.3 秒，低频仍偏多。</p>
+            <div class="card-meta"><span>笔记 22</span><span>11-04 实测</span><span>座位 80</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="block" id="latest" aria-labelledby="h-latest">
+      <div class="block-head">
+        <h2 id="h-latest">最新更新：11 月 1 日至 8 日新增与修订</h2>
+        <span class="hint">共 9 条</span>
+      </div>
+      <ul class="tight-list">
+        <li>
+          <span class="date">11-07</span>
+          <span class="t"><a href="/#picks">《雨夜短片合辑》条目补全</a><span class="sub">新增第 7 部《雾中接力》的片长与导演信息，原记录只有片名。</span></span>
+          <span class="src">编号 090</span>
+        </li>
+        <li>
+          <span class="date">11-06</span>
+          <span class="t"><a href="/#picks">第 14 期放映结束，现场记录归档</a><span class="sub">到场 71 人，问答环节 9 个问题，全部逐条记录。</span></span>
+          <span class="src">现场 11</span>
+        </li>
+        <li>
+          <span class="date">11-05</span>
+          <span class="t"><a href="/#deep">《旧桥三次曝光》画幅说明修订</a><span class="sub">原写 1.85:1，核对拷贝后改为 1.66:1，数字版另有遮幅。</span></span>
+          <span class="src">编号 089</span>
+        </li>
+        <li>
+          <span class="date">11-04</span>
+          <span class="t"><a href="/#guide">北岸放映厅混响实测数据公开</a><span class="sub">空场与满场各测 3 次，记录 125Hz 至 4kHz 六段数值。</span></span>
+          <span class="src">笔记 22</span>
+        </li>
+        <li>
+          <span class="date">11-03</span>
+          <span class="t"><a href="/#deep">16mm 反转片冲洗批次差异记录</a><span class="sub">同一批片基两次冲洗，密度差 0.15，色温偏冷约 120K。</span></span>
+          <span class="src">笔记 20</span>
+        </li>
+        <li>
+          <span class="date">11-02</span>
+          <span class="t"><a href="/#picks">FX3 双原生 ISO 对照补拍</a><span class="sub">补拍 40 秒，统一用同一支 35mm T1.5 镜头与同一降噪参数。</span></span>
+          <span class="src">笔记 21</span>
+        </li>
+        <li>
+          <span class="date">10-30</span>
+          <span class="t"><a href="/#comments">观众提问“拷贝为何不重制”整理成条目</a><span class="sub">共 4 条，含放映方与导演两方回应，标明哪条是转述。</span></span>
+          <span class="src">问答 09</span>
+        </li>
+        <li>
+          <span class="date">10-29</span>
+          <span class="t"><a href="/#picks">姜禾剪辑访谈发布</a><span class="sub">整理 3 条剪法规则，附 14 分钟样片的三版对照说明。</span></span>
+          <span class="src">访谈 06</span>
+        </li>
+        <li>
+          <span class="date">10-26</span>
+          <span class="t"><a href="/#channels">频道索引从 10 个扩到 12 个</a><span class="sub">新增“胶片冲洗”与“放映声学”两个频道，原“设备”拆分为“机身”与“镜头”。</span></span>
+          <span class="src">索引</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="block" id="channels" aria-labelledby="h-channels">
+      <div class="block-head">
+        <h2 id="h-channels">分类入口：按题材、器材、现场查</h2>
+        <span class="hint">12 个频道</span>
+      </div>
+      <div class="channels">
+        <a href="/#picks">雨夜短片<span>18 条</span></a>
+        <a href="/#picks">16mm 反转片<span>14 条</span></a>
+        <a href="/#picks">低照度拍摄<span>11 条</span></a>
+        <a href="/#picks">同期声剪辑<span>9 条</span></a>
+        <a href="/#guide">机身参数笔记<span>12 条</span></a>
+        <a href="/#guide">镜头与画幅<span>8 条</span></a>
+        <a href="/#deep">胶片冲洗记录<span>7 条</span></a>
+        <a href="/#deep">放映声学<span>5 条</span></a>
+        <a href="/#latest">仓库放映现场<span>11 条</span></a>
+        <a href="/#channels">拷贝格式对照<span>6 条</span></a>
+        <a href="/#faq">新人看片路径<span>4 条</span></a>
+        <a href="/#rank">年度条目榜<span>3 期</span></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析（唯一主体阅读区） -->
+    <section class="block" id="deep" aria-labelledby="h-deep">
+      <div class="block-head">
+        <h2 id="h-deep">深度解析：16mm 拷贝不该被当成“更高级”的放映格式</h2>
+        <span class="hint">唯一主体阅读区</span>
+      </div>
+      <article class="feature">
+        <p class="kicker">判断 · 可核对 · 可反驳</p>
+        <p>本轮 14 期放映里，有 5 期同时准备了 16mm 拷贝和 DCP 数字拷贝。放映后的现场记录显示，观众对两种格式的满意度差距并没有想象中大：第 11 期（9 月 20 日）16mm 场收到 41 份反馈，平均 4.2 分；第 12 期（10 月 3 日）DCP 场收到 38 份，平均 4.0 分。五分制，差距 0.2 分。</p>
+
+        <h3>一、把“16mm 更好看”拆成可核对的三件事</h3>
+        <p>这个说法通常混着三件事：颗粒带来的质感、放映机的机械抖动、以及拷贝本身的保存状态。三件事的强弱并不一致，不能打包成一句结论。</p>
+        <div class="compare">
+          <div>
+            <h4>颗粒与质感</h4>
+            <ul>
+              <li>反转片在 5000K 灯箱下观察，颗粒在 2K 扫描后可见但不成块</li>
+              <li>第 13 期观众反馈中，提到“颗粒好看”的有 17 条</li>
+              <li>同一部片 DCP 版在 4 米幕布上颗粒几乎不可见</li>
+            </ul>
+          </div>
+          <div>
+            <h4>机械抖动与稳定</h4>
+            <ul>
+              <li>第 11 期放映机片门调校后抖动降到肉眼难辨</li>
+              <li>未调校的场次（第 9 期）有 6 条反馈提到“画面抖”</li>
+              <li>DCP 场没有抖动问题，但也少了那种“在放映”的体感</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="claim">
+          <strong>可被反驳的判断：</strong>对第一次进放映厅的观众，DCP 的体验下限高于 16mm；16mm 的上限更高，但依赖片门调校与拷贝保存状态，这两个条件在本档案记录的 5 场里有 2 场不达标。
+        </div>
+
+        <h3>二、拷贝状态的数据：本年度 5 场 16mm 放映</h3>
+        <table class="data">
+          <caption>数据来源：第 9、11、13 期现场记录与放映方提供的拷贝检查单，2026 年 9 月至 11 月</caption>
+          <thead>
+            <tr><th scope="col">场次</th><th scope="col">日期</th><th scope="col">拷贝状态</th><th scope="col">抖动反馈条数</th><th scope="col">平均分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>第 9 期</td><td>09-06</td><td>有 3 处划伤，片门未调</td><td class="num">6</td><td class="num">3.7</td></tr>
+            <tr><td>第 11 期</td><td>09-20</td><td>片门调校，2 处轻微划伤</td><td class="num">1</td><td class="num">4.2</td></tr>
+            <tr><td>第 12 期</td><td>10-03</td><td>DCP（对照场）</td><td class="num">0</td><td class="num">4.0</td></tr>
+            <tr><td>第 13 期</td><td>10-17</td><td>片门调校，拷贝较新</td><td class="num">0</td><td class="num">4.4</td></tr>
+            <tr><td>第 14 期</td><td>11-06</td><td>双版本，16mm 为 B 卷</td><td class="num">2</td><td class="num">4.1</td></tr>
+          </tbody>
+        </table>
+        <p>按这张表，16mm 场的平均分从 3.7 到 4.4 不等，跨度 0.7 分；DCP 只有一场 4.0 分。样本量小，不能说 DCP 一定更稳，但可以说：16mm 的体验方差更大，原因集中在片门与拷贝状态，而不是格式本身。</p>
+
+        <h3>三、两种说法的差异：放映方与导演</h3>
+        <p>第 14 期问答环节，放映方陈述“拷贝是 B 卷，划伤少，但片门调了两次才稳定”；导演林望的说法是“首映那场（10-18）的拷贝更新，抖动更少”。两段都在 11 月 6 日的现场记录里，属于不同信息层：前者是设备事实，后者是转述的比较。核对办法是查 10 月 18 日的放映记录，那次确实用了 A 卷。</p>
+        <p>另有第三层信息尚待确认：有观众在 10 月 30 日的评论里推测“B 卷是为了让颜色更暖”，这属于推测，尚无拷贝检查单佐证。档案把这条标为“待核”，不作为判断依据。</p>
+
+        <h3>四、如果只能留一个建议</h3>
+        <p>第一次看 16mm 放映，选片门调校过、拷贝较新的场次，而不是选名气最大的片。第 13 期的平均分 4.4，比第 9 期高 0.7，差别不在片，而在片门和拷贝。这条判断随时可以用下一场的反馈推翻，只要出现一场片门未调却拿到 4.3 分以上的记录。</p>
+      </article>
+    </section>
+
+    <!-- 6 体验指南 -->
+    <section class="block" id="guide" aria-labelledby="h-guide">
+      <div class="block-head">
+        <h2 id="h-guide">体验指南：第一次参加短片放映的五个动作</h2>
+        <span class="hint">按顺序执行</span>
+      </div>
+      <ol class="steps">
+        <li><b>确认拷贝格式与片长</b><span>放映单会写 16mm、DCP 或双版本。总长 96 分钟的合辑通常设 12 分钟中场，单片超过 25 分钟的一般不连排。</span></li>
+        <li><b>提前 15 分钟到场</b><span>北岸放映厅 80 个座位，第 14 期 71 人到场，开场前 10 分钟入场通道会关闭，迟到者等第一段结束再进。</span></li>
+        <li><b>带一件薄外套</b><span>仓库场地无空调，11 月夜间室温约 17℃，放映机散热会让前排偏暖、后排偏冷。</span></li>
+        <li><b>记下想问的问题</b><span>问答环节通常 20 分钟，第 14 期 9 个问题里 5 个与拷贝有关，问题写在入场时发的卡片上更容易被叫到。</span></li>
+        <li><b>看后在条目页留一条</b><span>评论要求写清片名与场次，只写“好看”的会被折叠；指向具体条目的评论会进入下期现场记录。</span></li>
+      </ol>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="block" id="faq" aria-labelledby="h-faq">
+      <div class="block-head">
+        <h2 id="h-faq">常见问题</h2>
+        <span class="hint">6 问</span>
+      </div>
+      <details class="faq" open>
+        <summary>16mm 反转片和负片在放映上有什么区别？</summary>
+        <div class="ans">反转片冲洗后直接得到正像，可做放映拷贝，颗粒更明显；负片需要先印正片再放映，中间多一道工序，影调更平。本档案 14 条胶片条目里，11 条用反转片，3 条用负片印正。</div>
+      </details>
+      <details class="faq">
+        <summary>短片合辑的放映顺序是怎么定的？</summary>
+        <div class="ans">按片长从短到长排，最后放最长的一部，避免观众在长片后离场影响后续。第 14 期最短 6 分 10 秒，最长 21 分钟，顺序即按此排。</div>
+      </details>
+      <details class="faq">
+        <summary>FX3 在 12800 ISO 下的噪点能直接用吗？</summary>
+        <div class="ans">11 月 2 日的对照显示，12800 ISO 在 35mm T1.5 全开、1/50 快门下，暗部噪点可见但无块状；与 800 ISO 相比，高光滚降提前约 0.7 档。需要保留高光时，建议降回 800 ISO 并补光。</div>
+      </details>
+      <details class="faq">
+        <summary>仓库改放映厅的混响 1.9 秒，看对白多的片会糊吗？</summary>
+        <div class="ans">对白为主的短片在 1.9 秒混响下，句尾辅音容易糊；加挂 12 块吸音板后降到 1.3 秒，改善明显。音乐与氛围声为主的片受影响小。11 月 4 日的实测覆盖 125Hz 到 4kHz 六段。</div>
+      </details>
+      <details class="faq">
+        <summary>拷贝上的划伤会随放映次数增加吗？</summary>
+        <div class="ans">会。放映机片门与导片轮接触拷贝，每次放映都增加磨损。第 9 期那卷已有 3 处划伤，放映方在第 11 期前换了导片轮，之后两场未新增明显划伤。</div>
+      </details>
+      <details class="faq">
+        <summary>条目编号能直接搜索吗？</summary>
+        <div class="ans">可以。页头搜索框输入 088 或 88 都能命中《雨巷第七夜》。输入不存在的编号会提示无结果，并列出最接近的三个编号。</div>
+      </details>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="block" id="comments" aria-labelledby="h-comments">
+      <div class="block-head">
+        <h2 id="h-comments">观众怎么说：11 月 6 日场后留言</h2>
+        <span class="hint">按时间倒序 · 6 条</span>
+      </div>
+      <div class="comments">
+        <article class="comment">
+          <header><span class="avatar" style="background:#2f6f6a">许</span><span class="who">许望山</span><span class="when">11-07 09:12</span><span class="on">《雾中接力》</span></header>
+          <p>第 7 部《雾中接力》的结尾长镜头大概 2 分 40 秒，雾气从画面左侧进来，把两个人物分开。这一段如果是数字拍的，可能就拍不出那种密度。想问导演用了几档 ND。</p>
+        </article>
+        <article class="comment tone-crit">
+          <header><span class="avatar" style="background:#9c4a5a">程</span><span class="who">程一舟</span><span class="when">11-06 23:40</span><span class="on">放映设备</span></header>
+          <p>中场之后画面抖了两次，就在《旧桥三次曝光》开头。片门是不是没调好？观感上比第 13 期差一截，那场是真的稳。</p>
+        </article>
+        <article class="comment">
+          <header><span class="avatar" style="background:#c98a2e">罗</span><span class="who">罗应</span><span class="when">11-06 22:55</span><span class="on">《雨巷第七夜》</span></header>
+          <p>雨声那段是现场收的吗？声音很贴，伞骨的声音都在。14 分 20 秒一点不拖，倒觉得可以再长一点。</p>
+        </article>
+        <article class="comment tone-neutral">
+          <header><span class="avatar" style="background:#6c6558">邓</span><span class="who">邓迟</span><span class="when">11-06 22:31</span><span class="on">整体</span></header>
+          <p>71 个人坐满八成，散场时通道有点挤。内容没问题，椅子硬，坐 96 分钟腰酸。下次能不能把中场拉到 15 分钟。</p>
+        </article>
+        <article class="comment">
+          <header><span class="avatar" style="background:#2f6f6a">姚</span><span class="who">姚小满</span><span class="when">11-06 21:48</span><span class="on">《旧桥三次曝光》</span></header>
+          <p>三次曝光那个段落，第二次曝光的画面偏青，不知道是胶片本身还是冲洗批次。看第 20 号笔记说两次冲洗色温差 120K，可能就是那个原因。</p>
+        </article>
+        <article class="comment">
+          <header><span class="avatar" style="background:#9c4a5a">岑</span><span class="who">岑野</span><span class="when">11-06 21:05</span><span class="on">问答环节</span></header>
+          <p>问导演为什么不用数字拍雨，他说“想听胶片过片的声音”。这个回答有点绕，但现场放的时候确实能听到机器声，算一种解释吧。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="block" id="news" aria-labelledby="h-news">
+      <div class="block-head">
+        <h2 id="h-news">相关资讯：器材与场地的短讯</h2>
+        <span class="hint">10 月 10 日 — 11 月 8 日</span>
+      </div>
+      <ul class="tight-list">
+        <li>
+          <span class="date">11-08</span>
+          <span class="t">北岸放映厅 12 月排期表发出<span class="sub">共 3 场，两场为 16mm，一场为 DCP 对照；其中 12 月 5 日场设映后谈。</span></span>
+          <span class="src">场地公告</span>
+        </li>
+        <li>
+          <span class="date">11-05</span>
+          <span class="t">16mm 反转片新批次到货<span class="sub">批号 26-1103，感光度标称 200，实拍按 160 曝光，冲洗前需静置 24 小时。</span></span>
+          <span class="src">耗材记录</span>
+        </li>
+        <li>
+          <span class="date">11-01</span>
+          <span class="t">FX3 固件更新，低照度降噪选项调整<span class="sub">版本 4.02，新增两档降噪强度；11 月 2 日对照用的是默认档。</span></span>
+          <span class="src">器材记录</span>
+        </li>
+        <li>
+          <span class="date">10-28</span>
+          <span class="t">城南旧仓库 10 月 18 日首映的拷贝检查单公开<span class="sub">A 卷 2 处轻微划伤，无断片；放映机为 Eiki 16mm，片门调校一次。</span></span>
+          <span class="src">现场 10</span>
+        </li>
+        <li>
+          <span class="date">10-19</span>
+          <span class="t">导演姜禾的 14 分钟样片三版对照上线<span class="sub">三版分别为同期声先行、画面先行、环境铺底，时长差 40 秒。</span></span>
+          <span class="src">访谈 06</span>
+        </li>
+        <li>
+          <span class="date">10-12</span>
+          <span class="t">吸音板安装完成，混响从 1.9 秒降到 1.3 秒<span class="sub">共 12 块，尺寸 60×120 厘米，低频 125Hz 仍偏多 0.2 秒。</span></span>
+          <span class="src">笔记 22</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="block" id="related" aria-labelledby="h-related">
+      <div class="block-head">
+        <h2 id="h-related">相关推荐：常被一起点开的条目</h2>
+        <span class="hint">标签检索</span>
+      </div>
+      <ul class="tags">
+        <li><a href="/#deep">16mm 反转片冲洗批次差异</a></li>
+        <li><a href="/#picks">雨夜短片合辑第 14 期</a></li>
+        <li><a href="/#guide">FX3 双原生 ISO 实拍对照</a></li>
+        <li><a href="/#deep">仓库放映厅混响实测</a></li>
+        <li><a href="/#picks">旧桥三次曝光画幅说明</a></li>
+        <li><a href="/#comments">拷贝划伤与片门调校记录</a></li>
+        <li><a href="/#guide">新人看片路径清单</a></li>
+        <li><a href="/#rank">年度条目榜第 3 期</a></li>
+        <li><a href="/#news">北岸放映厅 12 月排期</a></li>
+      </ul>
+    </section>
+
+    <!-- 11 榜单 -->
+    <section class="block" id="rank" aria-labelledby="h-rank">
+      <div class="block-head">
+        <h2 id="h-rank">年度条目榜：按 6 项现场指标加权</h2>
+        <span class="hint">第 3 期 · 截至 11-06</span>
+      </div>
+      <ol class="rank">
+        <li><span class="name">《雨巷第七夜》</span><span class="desc">片长 14 分 20 秒；4 场放映，平均分 4.4；拷贝状态稳定</span><span class="val">91.2</span></li>
+        <li><span class="name">《旧桥三次曝光》</span><span class="desc">片长 21 分钟；3 场，平均 4.2；画幅说明修订一次</span><span class="val">88.6</span></li>
+        <li><span class="name">《雾中接力》</span><span class="desc">片长 6 分 10 秒；2 场，平均 4.3；问答提问最多</span><span class="val">86.0</span></li>
+        <li><span class="name">FX3 双原生 ISO 对照</span><span class="desc">器材笔记；被 3 篇访谈引用，含 2 组实测图</span><span class="val">83.5</span></li>
+        <li><span class="name">仓库改放映厅声学账</span><span class="desc">笔记 22；六段混响数据，含 12 块吸音板前后对比</span><span class="val">80.1</span></li>
+      </ol>
+    </section>
+
+    <!-- 12 现场时间线 -->
+    <section class="block" id="timeline" aria-labelledby="h-timeline">
+      <div class="block-head">
+        <h2 id="h-timeline">现场时间线：9 月至 11 月的五次放映</h2>
+        <span class="hint">只列有完整记录场次</span>
+      </div>
+      <div class="events">
+        <div class="ev">
+          <time datetime="2026-09-06">09-06 · 第 9 期</time>
+          <b>短片《慢门》等 5 部连映</b>
+          <p>到场 54 人，拷贝 3 处划伤，抖动反馈 6 条，平均分 3.7。放映后更换导片轮。</p>
+        </div>
+        <div class="ev">
+          <time datetime="2026-09-20">09-20 · 第 11 期</time>
+          <b>胶片专场，4 部 16mm</b>
+          <p>片门调校一次，抖动反馈 1 条，平均 4.2。41 份反馈里 17 条提到颗粒。</p>
+        </div>
+        <div class="ev">
+          <time datetime="2026-10-03">10-03 · 第 12 期</time>
+          <b>DCP 对照场，5 部数字短片</b>
+          <p>38 份反馈，平均 4.0；无抖动问题，有 4 条反馈认为“少了在放映的感觉”。</p>
+        </div>
+        <div class="ev">
+          <time datetime="2026-10-17">10-17 · 第 13 期</time>
+          <b>《雨巷第七夜》第二轮</b>
+          <p>拷贝较新，片门调校，平均 4.4；现场提问集中在雨声的同期录音方式。</p>
+        </div>
+        <div class="ev">
+          <time datetime="2026-11-06">11-06 · 第 14 期</time>
+          <b>雨夜短片合辑 7 部</b>
+          <p>到场 71 人，16mm 为 B 卷，双版本放映；问答 9 个问题，全部记录在档。</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 侧栏 -->
+  <aside class="rail" aria-label="辅助导航与侧栏信息">
+    <nav class="rail-box" aria-labelledby="h-railnav">
+      <h3 id="h-railnav">栏目速览</h3>
+      <ul class="rail-nav" id="railNav">
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#picks">精选内容推荐</a></li>
+        <li><a href="/#latest">最新更新</a></li>
+        <li><a href="/#channels">分类入口</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#comments">观众评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#rank">年度条目榜</a></li>
+        <li><a href="/#timeline">现场时间线</a></li>
+      </ul>
+    </nav>
+
+    <div class="rail-box">
+      <h3>本期放映单</h3>
+      <ul class="rail-list">
+        <li><a href="/#picks">《雨巷第七夜》14′20″</a><span class="d">11-06 · 16mm B 卷</span></li>
+        <li><a href="/#picks">《旧桥三次曝光》21′00″</a><span class="d">11-06 · 双版本</span></li>
+        <li><a href="/#picks">《雾中接力》6′10″</a><span class="d">11-06 · 数字</span></li>
+        <li><a href="/#picks">其余 4 部合计 54′30″</a><span class="d">11-06 · 连映</span></li>
+      </ul>
+    </div>
+
+    <div class="rail-box">
+      <h3>近期排期</h3>
+      <ul class="timeline">
+        <li><b>12-05 映后谈</b><span>16mm 专场 · 设导演问答</span></li>
+        <li><b>12-13 对照场</b><span>同一部片 16mm 与 DCP 各放一次</span></li>
+        <li><b>12-20 器材夜</b><span>FX3 低照度参数复盘</span></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<!-- 页脚 -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="b-name">酒色蝌蚪91</div>
+        <p class="b-desc">把每场放映拆成可核对的数字：到场人数、拷贝格式、抖动反馈条数。判断可以吵，记录先摆出来。</p>
+      </div>
+      <div>
+        <h4>条目</h4>
+        <ul>
+          <li><a href="/#picks">短片档案</a></li>
+          <li><a href="/#guide">器材笔记</a></li>
+          <li><a href="/#timeline">现场记录</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>检索</h4>
+        <ul>
+          <li><a href="/#channels">12 个频道</a></li>
+          <li><a href="/#rank">年度条目榜</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="/#comments">场后留言</a></li>
+          <li><a href="/#news">场地公告</a></li>
+          <li><a href="/#guide">新人指南</a></li>
+          <li><a href="/#latest">更新记录</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>本页条目、人数、评分与器材参数均为示例数据，用于说明归档口径；放映日期截至 2026-11-08。</span>
+      <span>更新时间 2026-11-08 · 版权归酒色蝌蚪91 档案组</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">
+  <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 15V4M4 8l5-5 5 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"酒色蝌蚪91",
+  "description":"独立影像与文字档案，收录短片放映、器材笔记与现场记录。",
+  "inLanguage":"zh-CN",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"/#q={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"16mm 反转片和负片在放映上有什么区别？","acceptedAnswer":{"@type":"Answer","text":"反转片冲洗后直接得到正像，可做放映拷贝，颗粒更明显；负片需要先印正片再放映，中间多一道工序，影调更平。本档案 14 条胶片条目里，11 条用反转片，3 条用负片印正。"}},
+    {"@type":"Question","name":"短片合辑的放映顺序是怎么定的？","acceptedAnswer":{"@type":"Answer","text":"按片长从短到长排，最后放最长的一部，避免观众在长片后离场影响后续。第 14 期最短 6 分 10 秒，最长 21 分钟，顺序即按此排。"}},
+    {"@type":"Question","name":"FX3 在 12800 ISO 下的噪点能直接用吗？","acceptedAnswer":{"@type":"Answer","text":"11 月 2 日的对照显示，12800 ISO 在 35mm T1.5 全开、1/50 快门下，暗部噪点可见但无块状；与 800 ISO 相比，高光滚降提前约 0.7 档。需要保留高光时，建议降回 800 ISO 并补光。"}},
+    {"@type":"Question","name":"仓库改放映厅的混响 1.9 秒，看对白多的片会糊吗？","acceptedAnswer":{"@type":"Answer","text":"对白为主的短片在 1.9 秒混响下，句尾辅音容易糊；加挂 12 块吸音板后降到 1.3 秒，改善明显。音乐与氛围声为主的片受影响小。11 月 4 日的实测覆盖 125Hz 到 4kHz 六段。"}},
+    {"@type":"Question","name":"拷贝上的划伤会随放映次数增加吗？","acceptedAnswer":{"@type":"Answer","text":"会。放映机片门与导片轮接触拷贝，每次放映都增加磨损。第 9 期那卷已有 3 处划伤，放映方在第 11 期前换了导片轮，之后两场未新增明显划伤。"}},
+    {"@type":"Question","name":"条目编号能直接搜索吗？","acceptedAnswer":{"@type":"Answer","text":"可以。页头搜索框输入 088 或 88 都能命中《雨巷第七夜》。输入不存在的编号会提示无结果，并列出最接近的三个编号。"}}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var toggle = document.getElementById('navToggle');
+  var mainnav = document.getElementById('mainnav');
+  if (toggle && mainnav) {
+    toggle.addEventListener('click', function(){
+      var open = mainnav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainnav.addEventListener('click', function(e){
+      if (e.target.closest('a')) {
+        mainnav.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 站内本地查找 */
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('q');
+  var fb = document.getElementById('searchFeedback');
+  var index = [];
+  document.querySelectorAll('main h2, main h3, main summary, .rail-box h3, .channels a, .tags a, .tight-list .t').forEach(function(el){
+    var text = el.textContent.replace(/\s+/g,' ').trim();
+    var href = '';
+    var link = el.querySelector ? el.querySelector('a') : null;
+    if (link && link.getAttribute('href')) { href = link.getAttribute('href'); }
+    else {
+      var sec = el.closest('section');
+      if (sec && sec.id) href = '/#' + sec.id;
+    }
+    if (text) index.push({t:text, h:href});
+  });
+
+  function search(q){
+    q = q.trim().toLowerCase();
+    if (!q) { fb.classList.remove('on'); fb.textContent=''; return; }
+    var hits = index.filter(function(item){ return item.t.toLowerCase().indexOf(q) !== -1; });
+    if (!hits.length) {
+      fb.classList.add('on');
+      fb.textContent = '未找到“' + q + '”，试试编号 088 或“反转片”“混响”。';
+      return;
+    }
+    fb.classList.add('on');
+    fb.textContent = '找到 ' + hits.length + ' 条：' + hits.slice(0,3).map(function(i){return i.t;}).join(' / ');
+    var first = hits[0];
+    if (first.h) {
+      var target = document.querySelector(first.h.replace('/#','#'));
+      if (target) {
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    }
+  }
+
+  if (form) {
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      search(input.value);
+    });
+  }
+  if (input) {
+    input.addEventListener('input', function(){
+      if (input.value.length >= 2) search(input.value);
+      else { fb.classList.remove('on'); }
+    });
+  }
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    if (window.scrollY > 480) toTop.classList.add('show');
+    else toTop.classList.remove('show');
+    updateActive();
+  }
+  if (toTop) {
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* 侧栏高亮 */
+  var railLinks = Array.prototype.slice.call(document.querySelectorAll('#railNav a'));
+  var sections = railLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  function updateActive(){
+    var pos = window.scrollY + 140;
+    var current = null;
+    sections.forEach(function(sec){
+      if (sec.offsetTop <= pos) current = sec.id;
+    });
+    railLinks.forEach(function(a){
+      var id = a.getAttribute('href').replace('/#','');
+      if (id === current) a.classList.add('active');
+      else a.classList.remove('active');
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* 键盘 Esc 关闭移动端菜单 */
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && mainnav && mainnav.classList.contains('open')) {
+      mainnav.classList.remove('open');
+      if (toggle) { toggle.setAttribute('aria-expanded','false'); toggle.focus(); }
+    }
+  });
+})();
+</script>
+</body>
+  </html>
