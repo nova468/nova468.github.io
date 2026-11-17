@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>npxvip 喷水黑料-争议事件与内容核查</title>
+<meta name="description" content="npxvip 喷水黑料事件汇总，整理 2026 年 10 月至 11 月的举报记录、平台回应与内容核查过程，包含争议条目时间线、证据对照和网友评论，帮助读者分辨事实与转述。">
+<meta name="keywords" content="npxvip 喷水黑料">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111a2b'/%3E%3Cpath d='M14 44c8-26 26-26 36-6' stroke='%234dc3ff' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='47' cy='23' r='5' fill='%23ffcf4d'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "npxvip 喷水黑料",
+  "description": "争议事件记录与内容核查",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "喷水黑料 视频最早出现在哪个平台",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可核对的首次传播记录是 2026 年 10 月 14 日深夜，一个名为 qiyu_2026 的账号在短视频区发布 18 秒片段，随后在 10 月 16 日被搬运至三个聊天群。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "npxvip 官方账号发过哪些回应",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "11 月 2 日账号发布 46 秒澄清视频，称画面经过剪辑；11 月 5 日再次发布文字声明，否认付费入群一说，并附上两份聊天记录截图。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "所谓的喷水黑料是否存在完整原片",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "截至 11 月 8 日，公开渠道只能找到 18 秒和 31 秒两个版本，完整原片没有任何一方出示，讨论中出现的“3 分钟版”属于传闻。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "怎么判断黑料截图是不是伪造的",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "先看截图的时间戳与平台 UI 版本是否对应，再对比字体、状态栏高度和电量图标，最后用反向检索确认是否在其他事件中重复使用。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "举报后平台一般多久处理",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "短视频平台的举报回执显示，普通举报 24 小时内受理，涉及隐私的加急通道 6 小时内响应，实际下架时间在 10 月 17 日到 10 月 21 日之间。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "讨论喷水黑料时哪些行为会带来法律风险",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "转发可识别的面部画面、公布住址或手机号、以付费方式出售所谓原片，这三类行为在 2026 年的公开判例中都被认定为侵权或违法。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#121826;
+  --ink-2:#3a4459;
+  --ink-3:#6b7488;
+  --bg:#f6f7fa;
+  --card:#ffffff;
+  --line:#e3e6ee;
+  --brand:#111a2b;
+  --accent:#1f7ae0;
+  --accent-soft:#e8f1fd;
+  --warn:#c2410c;
+  --warn-soft:#fdf0e6;
+  --ok:#0f766e;
+  --ok-soft:#e6f4f2;
+  --radius:14px;
+  --radius-s:8px;
+  --shadow:0 1px 2px rgba(18,24,38,.05),0 8px 24px rgba(18,24,38,.06);
+  --space:clamp(14px,2.4vw,24px);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  line-height:1.78;font-size:16px;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.35;margin:0;font-weight:700}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.3em}
+li{margin-bottom:.35em}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--space)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* sticky bar + header */
+.sticky-stack{position:sticky;top:0;z-index:60}
+.announce{
+  background:var(--brand);color:#dbe4f5;font-size:13.5px;
+  padding:8px var(--space);display:flex;gap:14px;align-items:center;flex-wrap:wrap;
+}
+.announce b{color:#ffcf4d;font-weight:700}
+.announce .dot{width:6px;height:6px;border-radius:50%;background:#4dc3ff;display:inline-block;margin-right:6px}
+.announce a{color:#9ecbff}
+header.site{
+  background:rgba(255,255,255,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(18,24,38,.02);
+}
+.header-in{display:flex;align-items:center;gap:16px;padding:10px var(--space);max-width:1180px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{display:block}
+.brand-text{font-weight:800;font-size:17px;letter-spacing:.2px;color:var(--ink);white-space:nowrap}
+nav.main{margin-left:auto;display:flex;align-items:center;gap:4px}
+nav.main a{
+  color:var(--ink-2);font-size:14px;padding:7px 10px;border-radius:8px;white-space:nowrap;
+}
+nav.main a:hover{background:var(--accent-soft);text-decoration:none;color:var(--accent)}
+.nav-toggle{
+  display:none;margin-left:auto;background:#fff;border:1px solid var(--line);
+  border-radius:9px;padding:7px 12px;font-size:14px;font-family:inherit;color:var(--ink);cursor:pointer;
+}
+.search-box{position:relative;flex-shrink:0;width:190px}
+.search-box input{
+  width:100%;padding:7px 12px;border:1px solid var(--line);border-radius:9px;
+  font-family:inherit;font-size:13.5px;background:#fbfcfe;color:var(--ink);
+}
+.search-box input:focus{outline:none;border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px rgba(31,122,224,.12)}
+.search-result{
+  position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;border:1px solid var(--line);
+  border-radius:10px;box-shadow:var(--shadow);padding:6px;max-height:260px;overflow:auto;display:none;z-index:70;
+}
+.search-result.show{display:block}
+.search-result a{display:block;padding:6px 8px;border-radius:6px;font-size:13px;color:var(--ink-2)}
+.search-result a:hover{background:var(--accent-soft);text-decoration:none}
+.search-result .empty{padding:8px;font-size:13px;color:var(--ink-3)}
+
+/* hero */
+.hero{
+  position:relative;overflow:hidden;color:#eaf1fd;
+  background:
+    radial-gradient(900px 340px at 82% -10%, rgba(77,195,255,.26), transparent 62%),
+    radial-gradient(700px 300px at 8% 110%, rgba(255,207,77,.14), transparent 60%),
+    linear-gradient(150deg,#0d1524 0%,#111a2b 52%,#152036 100%);
+}
+.hero-in{max-width:1180px;margin:0 auto;padding:clamp(32px,5vw,64px) var(--space);display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,4vw,52px);align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#9ecbff;border:1px solid rgba(158,203,255,.34);padding:4px 12px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(30px,4.6vw,46px);letter-spacing:.5px;color:#fff;margin-bottom:18px}
+.hero h1 span{color:#4dc3ff}
+.hero p.lead{color:#c2cfe4;font-size:clamp(15px,1.6vw,17px);max-width:36em;margin-bottom:26px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn{display:inline-block;padding:10px 20px;border-radius:10px;font-size:14.5px;font-weight:600;transition:transform .15s ease,background .15s ease}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:#4dc3ff;color:#0a1424}
+.btn-primary:hover{background:#6ed0ff}
+.btn-ghost{border:1px solid rgba(194,207,228,.4);color:#dbe4f5}
+.btn-ghost:hover{background:rgba(255,255,255,.07)}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;font-size:13px;color:#8fa1bd}
+.hero-stats b{display:block;color:#fff;font-size:20px;letter-spacing:.4px}
+.hero-art{position:relative;min-height:260px}
+.hero-art svg{width:100%;height:auto;display:block}
+
+/* main layout */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(20px,3vw,34px);padding:clamp(26px,4vw,44px) 0}
+main{min-width:0}
+aside.sidebar{min-width:0}
+section.block{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,2.6vw,30px);margin-bottom:22px;box-shadow:var(--shadow);scroll-margin-top:110px}
+.sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px}
+.sec-head h2{font-size:clamp(19px,2.2vw,23px)}
+.sec-head .kicker{font-size:12.5px;color:var(--accent);background:var(--accent-soft);padding:2px 9px;border-radius:6px;font-weight:600}
+.sec-desc{color:var(--ink-3);font-size:14px;margin-bottom:18px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.card{border:1px solid var(--line);border-radius:var(--radius-s);padding:14px 16px;background:#fff;transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(18,24,38,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px}
+.card p{font-size:13.5px;color:var(--ink-2);margin-bottom:6px}
+.card .meta{font-size:12px;color:var(--ink-3)}
+.chip{display:inline-block;font-size:12px;padding:2px 8px;border-radius:6px;background:var(--accent-soft);color:var(--accent);margin-right:6px}
+.chip.warn{background:var(--warn-soft);color:var(--warn)}
+.chip.ok{background:var(--ok-soft);color:var(--ok)}
+
+.list-compact{list-style:none;padding:0;margin:0}
+.list-compact li{display:grid;grid-template-columns:76px 1fr;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.list-compact li:last-child{border-bottom:0}
+.list-compact time{color:var(--ink-3);font-size:12.5px;font-variant-numeric:tabular-nums;padding-top:1px}
+.list-compact .t{color:var(--ink)}
+.list-compact .t b{font-weight:600}
+.list-compact .t small{display:block;color:var(--ink-3);font-size:12.5px}
+
+.index-tags{display:flex;flex-wrap:wrap;gap:10px}
+.index-tags a{display:inline-flex;flex-direction:column;gap:1px;padding:9px 14px;border:1px solid var(--line);border-radius:10px;background:#fbfcfe;color:var(--ink-2);font-size:14px}
+.index-tags a small{font-size:11.5px;color:var(--ink-3)}
+.index-tags a:hover{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);text-decoration:none}
+
+.analysis{font-size:15px}
+.analysis h3{font-size:17px;margin:22px 0 8px;padding-left:12px;border-left:4px solid var(--accent)}
+.analysis h3:first-of-type{margin-top:6px}
+.analysis .quote{background:#f3f6fb;border-left:3px solid var(--accent);padding:10px 16px;border-radius:0 var(--radius-s) var(--radius-s) 0;color:var(--ink-2);font-size:14px;margin:12px 0}
+.analysis table{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0}
+.analysis th,.analysis td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.analysis th{background:#f3f6fb;font-weight:600}
+.checklist{list-style:none;padding:0;margin:10px 0}
+.checklist li{position:relative;padding-left:26px;margin-bottom:8px;font-size:14px}
+.checklist li::before{content:"✓";position:absolute;left:0;top:0;color:var(--ok);font-weight:700}
+
+.guide-steps{counter-reset:step;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.guide-steps li{counter-increment:step;position:relative;padding:12px 14px 12px 52px;border:1px solid var(--line);border-radius:var(--radius-s);font-size:14px}
+.guide-steps li::before{content:counter(step);position:absolute;left:12px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.guide-steps b{display:block;margin-bottom:2px}
+
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius-s);overflow:hidden}
+.compare>div{padding:14px 16px;font-size:13.5px}
+.compare>div:first-child{background:var(--warn-soft);border-right:1px solid var(--line)}
+.compare>div:last-child{background:var(--ok-soft)}
+.compare h4{font-size:14px;margin-bottom:8px}
+.compare ul{margin:0;padding-left:1.1em}
+
+details.faq{border:1px solid var(--line);border-radius:var(--radius-s);padding:0;margin-bottom:10px;background:#fff;overflow:hidden}
+details.faq summary{cursor:pointer;padding:13px 16px;font-size:14.5px;font-weight:600;list-style:none;position:relative;padding-right:38px}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:18px;font-weight:400}
+details.faq[open] summary::after{content:"−"}
+details.faq .ans{padding:0 16px 14px;font-size:14px;color:var(--ink-2)}
+
+.comments{display:grid;gap:12px}
+.comment{border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 15px;font-size:14px;background:#fbfcfe}
+.comment .who{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;color:var(--ink-3);margin-bottom:5px;flex-wrap:wrap}
+.comment .who b{color:var(--ink-2);font-size:13px}
+.comment p{margin:0}
+
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline li{position:relative;padding:0 0 16px 26px;border-left:2px solid var(--line);margin-left:6px}
+.timeline li:last-child{border-left-color:transparent;padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-7px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid #fff;box-shadow:0 0 0 2px var(--accent-soft)}
+.timeline time{font-size:12.5px;color:var(--accent);font-weight:600;display:block;margin-bottom:2px}
+.timeline p{font-size:13.8px;margin:0;color:var(--ink-2)}
+
+.rank{list-style:none;padding:0;margin:0;counter-reset:rank}
+.rank li{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.rank li:last-child{border-bottom:0}
+.rank li::before{counter-increment:rank;content:counter(rank);font-weight:800;color:var(--ink-3);font-size:15px;text-align:center}
+.rank li:nth-child(-n+3)::before{color:var(--accent)}
+.rank .score{font-size:12.5px;color:var(--ink-3);white-space:nowrap}
+
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:20px;box-shadow:var(--shadow)}
+.side-card h3{font-size:15px;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.side-card ul{list-style:none;padding:0;margin:0}
+.side-card ul a{font-size:13.8px;color:var(--ink-2);display:block;padding:5px 0}
+.side-card ul a.active,.side-card ul a:hover{color:var(--accent);text-decoration:none}
+.side-card p{font-size:13.5px;color:var(--ink-2);margin-bottom:10px}
+
+footer.site{background:var(--brand);color:#a9b8d0;padding:clamp(30px,4vw,48px) 0 24px;font-size:13.5px}
+.foot-in{max-width:1180px;margin:0 auto;padding:0 var(--space);display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:clamp(20px,3vw,40px)}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.foot-brand .brand-text{color:#fff}
+footer.site p{color:#8fa1bd;font-size:13px;max-width:34em}
+footer.site h4{color:#eaf1fd;font-size:14px;margin-bottom:12px}
+footer.site ul{list-style:none;padding:0;margin:0}
+footer.site ul a{color:#a9b8d0;font-size:13px;display:block;padding:3px 0}
+footer.site ul a:hover{color:#4dc3ff;text-decoration:none}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:16px;font-size:12.5px;color:#7789a5;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;max-width:1180px;margin-left:auto;margin-right:auto;padding-left:var(--space);padding-right:var(--space)}
+
+.to-top{position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:18px;cursor:pointer;box-shadow:var(--shadow);display:none;align-items:center;justify-content:center;z-index:80}
+.to-top.show{display:flex}
+.to-top:hover{background:var(--accent-soft);border-color:var(--accent)}
+
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr}
+  aside.sidebar{order:2}
+  main{order:1}
+  .hero-in{grid-template-columns:1fr}
+  .hero-art{max-width:460px}
+  .foot-in{grid-template-columns:1fr 1fr}
+  nav.main{position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);flex-direction:column;align-items:stretch;padding:10px var(--space);display:none;gap:2px}
+  nav.main.open{display:flex}
+  nav.main a{padding:9px 12px}
+  .nav-toggle{display:block}
+  .header-in{position:relative;flex-wrap:wrap}
+  .search-box{width:100%;order:3;margin-top:4px}
+}
+@media (max-width:640px){
+  .grid-3,.grid-2,.compare{grid-template-columns:1fr}
+  .compare>div:first-child{border-right:0;border-bottom:1px solid var(--line)}
+  .list-compact li{grid-template-columns:1fr;gap:2px}
+  .foot-in{grid-template-columns:1fr}
+  body{font-size:15.5px}
+  .to-top{right:12px;bottom:14px;width:40px;height:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .card:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-stack">
+  <div class="announce" role="region" aria-label="站点公告">
+    <span><span class="dot"></span><b>更新</b> 11 月 6 日新增 qiyu_2026 账号下架回执与 31 秒版本比对</span>
+    <span>11 月 2 日澄清视频逐帧记录已归档</span>
+    <a href="/#latest">查看最新更新</a>
+  </div>
+
+  <header class="site">
+    <div class="header-in">
+      <a class="brand" href="/#top" aria-label="返回首页">
+        <svg width="34" height="34" viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#111a2b"/>
+          <path d="M14 44c8-26 26-26 36-6" stroke="#4dc3ff" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <circle cx="47" cy="23" r="5" fill="#ffcf4d"/>
+        </svg>
+        <span class="brand-text">npxvip 喷水黑料</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      <nav class="main" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">事件概览</a>
+        <a href="/#picks">精选核查</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#faq">常见疑问</a>
+      </nav>
+      <div class="search-box">
+        <label class="sr-only" for="siteSearch">站内查找关键词</label>
+        <input type="search" id="siteSearch" placeholder="查找条目，如 澄清视频" autocomplete="off">
+        <div class="search-result" id="searchResult" role="listbox" aria-label="查找结果"></div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div id="top"></div>
+
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="hero-in">
+    <div>
+      <div class="hero-tag">争议事件记录 · 逐条对照 · 更新至 2026-11-08</div>
+      <h1 id="heroTitle">npxvip 喷水黑料</h1>
+      <p class="lead">把 10 月中旬以来围绕 18 秒片段、46 秒澄清视频和付费入群传闻的公开材料按时间排开，标明哪部分是原始记录，哪部分是二次转述，哪部分还没有任何一方出示证据。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#analysis">读深度核查</a>
+        <a class="btn btn-ghost" href="/#timeline">看事件时间线</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>6</b>个可核对节点</div>
+        <div><b>2</b>个公开视频版本</div>
+        <div><b>3</b>份平台回执</div>
+        <div><b>41</b>条公开讨论样本</div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 300" role="presentation">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#1f7ae0" stop-opacity=".34"/>
+            <stop offset="1" stop-color="#4dc3ff" stop-opacity=".05"/>
+          </linearGradient>
+        </defs>
+        <rect x="18" y="24" width="384" height="252" rx="18" fill="url(#g1)" stroke="#2b3a55"/>
+        <rect x="46" y="56" width="150" height="14" rx="7" fill="#4dc3ff" opacity=".8"/>
+        <rect x="46" y="84" width="254" height="9" rx="4.5" fill="#8fa1bd" opacity=".55"/>
+        <rect x="46" y="102" width="212" height="9" rx="4.5" fill="#8fa1bd" opacity=".4"/>
+        <rect x="46" y="132" width="118" height="52" rx="9" fill="#0d1524" stroke="#3d5478"/>
+        <rect x="180" y="132" width="118" height="52" rx="9" fill="#0d1524" stroke="#3d5478"/>
+        <rect x="314" y="132" width="60" height="52" rx="9" fill="#0d1524" stroke="#ffcf4d" opacity=".7"/>
+        <path d="M46 216 L120 196 L192 220 L268 190 L344 206 L374 196" stroke="#ffcf4d" stroke-width="3" fill="none" stroke-linecap="round" opacity=".85"/>
+        <circle cx="120" cy="196" r="4.5" fill="#ffcf4d"/>
+        <circle cx="268" cy="190" r="4.5" fill="#ffcf4d"/>
+        <circle cx="344" cy="206" r="4.5" fill="#ffcf4d"/>
+        <rect x="46" y="240" width="86" height="9" rx="4.5" fill="#8fa1bd" opacity=".5"/>
+        <rect x="142" y="240" width="52" height="9" rx="4.5" fill="#8fa1bd" opacity=".3"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="wrap layout">
+  <main>
+    <section class="block" id="overview">
+      <div class="sec-head"><h2>事件概览：被讨论的到底是什么</h2><span class="kicker">领域概览</span></div>
+      <p class="sec-desc">先把名词拆开。10 月中旬以来流传的内容由三段独立材料构成，来源、时长和传播路径都不同，混在一起谈会掩盖差异。</p>
+      <div class="grid-3">
+        <article class="card">
+          <span class="chip warn">原始片段</span>
+          <h3>18 秒横屏视频</h3>
+          <p>10 月 14 日 23:47 由账号 qiyu_2026 首发，竖屏拍摄后转横屏，画面左上角残留拍摄软件的 00:18 计时。</p>
+          <div class="meta">可核对：发布时间戳、账号历史 12 条动态</div>
+        </article>
+        <article class="card">
+          <span class="chip">二次剪辑</span>
+          <h3>31 秒拼接版本</h3>
+          <p>10 月 16 日出现在两个聊天群，比原片多出 13 秒，多出部分无计时器，帧率从 30 掉到 24，衔接处有 3 帧黑场。</p>
+          <div class="meta">可核对：帧率差异、黑场位置</div>
+        </article>
+        <article class="card">
+          <span class="chip ok">当事人回应</span>
+          <h3>46 秒澄清视频</h3>
+          <p>11 月 2 日 20:10 由 npxvip 账号发布，出镜者称画面被剪接，未提及拍摄地点，视频末尾展示了两张聊天记录截图。</p>
+          <div class="meta">可核对：发布时间、截图内对话日期</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="picks">
+      <div class="sec-head"><h2>精选核查：三份值得先看的材料</h2><span class="kicker">精选内容推荐</span></div>
+      <p class="sec-desc">材料价值取决于能否被独立验证，而不是转发量。下面三份各自带可查的痕迹。</p>
+      <div class="grid-2">
+        <article class="card">
+          <span class="chip">回执</span>
+          <h3>10 月 17 日举报受理回执</h3>
+          <p>编号 J-20261017-4471，显示受理时间为 10 月 17 日 09:32，处理结果为“限制推荐”，未下架。该回执由举报人在讨论区贴出，未打码部分可核对编号格式。</p>
+          <div class="meta">性质：事实记录 · 单一来源</div>
+        </article>
+        <article class="card">
+          <span class="chip">对比</span>
+          <h3>两个版本的逐帧差异表</h3>
+          <p>把 18 秒版和 31 秒版并排抽帧，第 214 帧到第 217 帧出现画面跳变，背景墙面瓷砖缝隙错位约 6 像素，说明中间有拼接。</p>
+          <div class="meta">性质：技术比对 · 可复现</div>
+        </article>
+        <article class="card">
+          <span class="chip warn">传闻</span>
+          <h3>“付费入群看原片”说法</h3>
+          <p>10 月 19 日起在三个群组出现，报价 38 元和 88 元两档。目前没有任何付款记录、群公告或收款账号被公开，属于未证实指控。</p>
+          <div class="meta">性质：转述 · 无凭证</div>
+        </article>
+        <article class="card">
+          <span class="chip ok">回应</span>
+          <h3>11 月 5 日文字声明全文</h3>
+          <p>账号主页置顶，共 218 字，否认收费，称已委托律师取证，未附律师函编号。声明中“从未建立任何收费群”一句可与其他材料交叉核对。</p>
+          <div class="meta">性质：当事人陈述 · 待验证</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="latest">
+      <div class="sec-head"><h2>最新更新：本周新增条目</h2><span class="kicker">时间线</span></div>
+      <p class="sec-desc">只记录有具体日期和来源的变化，不含推测。</p>
+      <ul class="list-compact">
+        <li><time datetime="2026-11-06">11-06</time><span class="t"><b>31 秒版本比对表公开</b><small>制作者为技术讨论区账号 framecheck，附 4 张抽帧图，标注第 214 帧拼接点</small></span></li>
+        <li><time datetime="2026-11-05">11-05</time><span class="t"><b>账号发布 218 字文字声明</b><small>否认收费入群，称已委托律师，未展示函件编号</small></span></li>
+        <li><time datetime="2026-11-02">11-02</time><span class="t"><b>46 秒澄清视频上线</b><small>20:10 发布，次日 11:20 播放量 21.4 万，评论区关闭</small></span></li>
+        <li><time datetime="2026-10-21">10-21</time><span class="t"><b>三条搬运内容完成下架</b><small>平台回执显示处理时间集中在 10 月 17 日至 21 日</small></span></li>
+        <li><time datetime="2026-10-16">10-16</time><span class="t"><b>31 秒版本进入两个聊天群</b><small>群成员数分别为 486 和 132，最早转发时间 10 月 16 日 14:06</small></span></li>
+        <li><time datetime="2026-10-14">10-14</time><span class="t"><b>18 秒片段首次出现</b><small>账号 qiyu_2026 于 23:47 发布，该账号此前仅有 11 条日常动态</small></span></li>
+      </ul>
+    </section>
+
+    <section class="block" id="channels">
+      <div class="sec-head"><h2>分类入口：按材料类型检索</h2><span class="kicker">标签索引</span></div>
+      <p class="sec-desc">每条入口对应一种材料形态，点开后是同类条目的集合。</p>
+      <div class="index-tags">
+        <a href="/#timeline">事件时间线 <small>6 个节点</small></a>
+        <a href="/#picks">平台举报回执 <small>3 份</small></a>
+        <a href="/#picks">澄清视频逐帧记录 <small>46 秒完整版</small></a>
+        <a href="/#analysis">两版本拼接比对 <small>18 秒 / 31 秒</small></a>
+        <a href="/#guide">截图真伪判断步骤 <small>5 步核查法</small></a>
+        <a href="/#faq">付费入群传闻 <small>未证实</small></a>
+        <a href="/#comments">公开讨论样本 <small>41 条</small></a>
+        <a href="/#rank">材料可信度分层 <small>A/B/C 三档</small></a>
+        <a href="/#related">相关资讯与延伸 <small>8 条</small></a>
+        <a href="/#quote">当事人原话摘录 <small>3 段</small></a>
+      </div>
+    </section>
+
+    <section class="block" id="analysis">
+      <div class="sec-head"><h2>深度解析：31 秒版本多出的 13 秒最值得追问</h2><span class="kicker">唯一主体阅读区</span></div>
+      <div class="analysis">
+        <p>争议的核心不在 18 秒原片拍了什么，而在 31 秒版本多出来的那 13 秒。多出来的部分决定了整件事的性质：如果只是同一场景的延续，它属于画面外的生活记录；如果来自另一时间或另一空间，拼接本身就构成误导。目前公开材料只支持后一种判断，理由是可复现的帧级差异。</p>
+
+        <h3>拼接点位置：第 214 帧到第 217 帧</h3>
+        <p>技术讨论区账号 framecheck 在 11 月 6 日贴出 4 张抽帧图，取 18 秒版第 198、206、214 帧和 31 秒版对应位置。第 214 帧之前两版画面一致，第 217 帧起背景墙面瓷砖缝隙错位约 6 像素，人物肩线角度变化 4 度。摄像机在固定位置拍摄时不会出现这种位移。<span class="quote">可复核：任一播放器逐帧截图，比对第 214 帧后画面</span></p>
+        <p>另一组证据来自音轨。18 秒版全程有持续的环境底噪，中心频率约 220Hz；31 秒版在 00:18.4 处底噪中断 0.3 秒，随后底噪中心频率变为约 260Hz。同一次拍摄不会出现底噪频率跳变。framecheck 的结论是“至少两段素材”，这个判断可以被任何人用免费软件重复。</p>
+
+        <h3>下架时间与澄清视频的时间差</h3>
+        <p>把时间排开看：10 月 14 日发布，10 月 16 日出现拼接版，10 月 17 日举报受理，10 月 21 日三条搬运内容下架，11 月 2 日发布澄清视频。从首传到澄清隔了 19 天。这 19 天里，账号没有发布任何说明，主页动态保持在 10 月 9 日的一条日常更新。澄清视频上线当天，评论区关闭，点赞数停在 2.7 万。</p>
+        <table>
+          <thead><tr><th>节点</th><th>日期</th><th>可核对痕迹</th></tr></thead>
+          <tbody>
+            <tr><td>18 秒首传</td><td>10 月 14 日 23:47</td><td>qiyu_2026 发布记录</td></tr>
+            <tr><td>31 秒出现</td><td>10 月 16 日 14:06</td><td>两群转发时间戳</td></tr>
+            <tr><td>举报受理</td><td>10 月 17 日 09:32</td><td>回执 J-20261017-4471</td></tr>
+            <tr><td>搬运下架</td><td>10 月 17—21 日</td><td>三份处理回执</td></tr>
+            <tr><td>澄清视频</td><td>11 月 2 日 20:10</td><td>发布页播放量、关闭评论</td></tr>
+          </tbody>
+        </table>
+
+        <h3>“付费入群”指控缺什么</h3>
+        <p>这条指控从 10 月 19 日开始扩散，流传版本提到 38 元和 88 元两档价格。截至 11 月 8 日，没有任何收款截图、群公告或转账记录被公开。有一个名为“围观记录”的账号贴出一张聊天截图，但截图里对方头像被完全涂黑，对话框时间显示 10 月 12 日，早于 18 秒片段的出现时间。这条证据在时间上自相矛盾，不能作为指控依据。</p>
+        <p>11 月 5 日的文字声明否认收费，措辞是“从未建立任何收费群”，范围限定在“收费群”，没有否认曾建立免费群或粉丝群。声明的局限也要说明：它没有附律师函编号，也没有出示完整的群列表截图，因此只能算当事人表态，不能当作结论。</p>
+
+        <h3>可以拆成三层的判断</h3>
+        <ul class="checklist">
+          <li><b>已证实的部分：</b>18 秒片段真实存在，31 秒版本为拼接，拼接点在第 214—217 帧。</li>
+          <li><b>有争议的部分：</b>18 秒画面的拍摄时间与地点，双方说法不一致，缺少第三方材料。</li>
+          <li><b>未证实的部分：</b>付费入群、3 分钟完整原片、其他涉及第三人的说法，均无公开凭证。</li>
+        </ul>
+        <p>这里给一个可能被反驳的判断：这次事件里真正被传播的伤害来自拼接版，而不是原片。理由是 10 月 16 日之后的转发量集中在 31 秒版，18 秒原版的转发记录只有 7 条，且集中在首发账号的粉丝圈内。若这个判断成立，处理重点应该放在拼接内容的分发节点上，而不是反复讨论原始画面。反驳的角度也成立：如果原片本身就不该被拍摄，讨论分发只是次要问题。</p>
+      </div>
+    </section>
+
+    <section class="block" id="guide">
+      <div class="sec-head"><h2>体验指南：五步核对一张黑料截图</h2><span class="kicker">编号步骤</span></div>
+      <p class="sec-desc">方法面向普通读者，用手机和免费工具就能完成，不需要额外软件。</p>
+      <ol class="guide-steps">
+        <li><b>看状态栏</b>对比截图顶部时间、电量、信号图标与该平台当前版本 UI。10 月 12 日那张截图的状态栏电量图标是 2024 年样式，与账号手机型号不符。</li>
+        <li><b>量字体行距</b>把截图放大到 200%，观察对话框内文字的行距是否均匀。拼接截图常在第二条消息处出现行距突变。</li>
+        <li><b>查时间锚点</b>把截图里的对话日期与公开事件日期对照。早于事件发生的“爆料截图”基本可以排除。</li>
+        <li><b>做反向检索</b>把截图里的独特句子放进搜索引擎，看是否在别的争议事件中出现过。同一张图重复使用是常见手法。</li>
+        <li><b>记录来源链</b>保存最早发布者的账号、发布时间和原帖链接。二手转发无法追溯时，标注“来源不明”，不要当作证据扩散。</li>
+      </ol>
+    </section>
+
+    <section class="block" id="compare">
+      <div class="sec-head"><h2>对照面板：两个版本的关键差异</h2><span class="kicker">对照面板</span></div>
+      <p class="sec-desc">同一事件的两种说法并排放，差异点用可量化的指标标出。</p>
+      <div class="compare">
+        <div>
+          <h4>18 秒版本</h4>
+          <ul>
+            <li>计时器 00:18，全程可见</li>
+            <li>帧率 30fps，无跳变</li>
+            <li>底噪约 220Hz，持续</li>
+            <li>转发记录 7 条</li>
+            <li>首发账号粉丝 1.2 万</li>
+          </ul>
+        </div>
+        <div>
+          <h4>31 秒版本</h4>
+          <ul>
+            <li>后 13 秒无计时器</li>
+            <li>帧率 24fps，第 214 帧跳变</li>
+            <li>00:18.4 底噪中断 0.3 秒</li>
+            <li>两群转发，覆盖 618 人</li>
+            <li>来源账号不可追溯</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="rank">
+      <div class="sec-head"><h2>材料可信度分层</h2><span class="kicker">榜单 / 分层</span></div>
+      <p class="sec-desc">按可复核程度分三档，分数为公开痕迹数量与独立来源数的简单相加，仅作排序参考。</p>
+      <ol class="rank">
+        <li><span><b>帧级拼接比对表</b> · framecheck 11 月 6 日发布，附抽帧图与音轨分析</span><span class="score">A 档 9.0</span></li>
+        <li><span><b>平台举报受理回执</b> · 编号 J-20261017-4471，处理结果可查</span><span class="score">A 档 8.4</span></li>
+        <li><span><b>46 秒澄清视频</b> · 当事人出镜，但关键信息缺失</span><span class="score">B 档 6.5</span></li>
+        <li><span><b>11 月 5 日文字声明</b> · 无附件，无法交叉验证</span><span class="score">B 档 5.8</span></li>
+        <li><span><b>“付费入群”聊天截图</b> · 头像涂黑，时间早于事件</span><span class="score">C 档 2.1</span></li>
+      </ol>
+    </section>
+
+    <section class="block" id="comments">
+      <div class="sec-head"><h2>用户评论：41 条公开样本里的几种声音</h2><span class="kicker">用户互动</span></div>
+      <p class="sec-desc">从讨论区抽取 41 条不含人身攻击的发言，保留原始措辞，标出指向具体条目的部分。</p>
+      <div class="comments">
+        <div class="comment">
+          <div class="who"><b>帧率观察者</b><span>11 月 6 日 22:14</span></div>
+          <p>第 214 帧那里我看出来了，瓷砖缝对不上，framecheck 说的 6 像素我量了一下差不多。<span class="chip">指向拼接比对表</span></p>
+        </div>
+        <div class="comment">
+          <div class="who"><b>老猫不熬夜</b><span>11 月 5 日 23:40</span></div>
+          <p>声明 218 个字，最关键的一句是“从未建立任何收费群”，那免费群算不算？这个问题没人回答。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><b>北岸线</b><span>11 月 4 日 09:02</span></div>
+          <p>澄清视频下面关了评论，这一点让我不太舒服。想说什么就说，关评论反而像心虚。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><b>数据搬运工</b><span>11 月 3 日 16:25</span></div>
+          <p>那张 10 月 12 日的聊天截图明显有问题，时间比首传还早两天，居然还有人在转。<span class="chip">指向付费入群截图</span></p>
+        </div>
+        <div class="comment">
+          <div class="who"><b>路过围观</b><span>11 月 2 日 21:50</span></div>
+          <p>说实话对谁对谁错没什么兴趣，只想知道 31 秒版是谁第一个发的。这个信息比什么都重要。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><b>半个技术宅</b><span>10 月 30 日 14:08</span></div>
+          <p>底噪频率那段分析很扎实，220 到 260 的跳变用 Audacity 一看就知道，不是同一段录的。<span class="chip">指向音轨分析</span></p>
+        </div>
+        <div class="comment">
+          <div class="who"><b>沉默的多数</b><span>10 月 25 日 11:33</span></div>
+          <p>举报回执编号 J-20261017-4471 我去查了，格式是对的，但处理结果只写了“限制推荐”，没写具体原因。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><b>不站队</b><span>10 月 22 日 19:47</span></div>
+          <p>感觉两边都在放大对自己有利的部分。原片 18 秒没人讨论，全在吵后面那 13 秒。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="related">
+      <div class="sec-head"><h2>相关资讯与延伸条目</h2><span class="kicker">相关资讯</span></div>
+      <p class="sec-desc">与本次事件共享方法或背景的公开材料，按时间排列。</p>
+      <ul class="list-compact">
+        <li><time datetime="2026-11-07">11-07</time><span class="t"><b>短视频拼接识别入门</b><small>讨论区教程帖，介绍用免费软件抽帧与查看元数据的基础操作</small></span></li>
+        <li><time datetime="2026-10-28">10-28</time><span class="t"><b>隐私类举报的加急通道说明</b><small>平台帮助中心页面，写明涉及隐私的举报 6 小时内响应</small></span></li>
+        <li><time datetime="2026-10-20">10-20</time><span class="t"><b>2026 年公开判例汇编：转发可识别画面</b><small>三起案例，判决时间分别为 3 月、6 月、9 月</small></span></li>
+        <li><time datetime="2026-10-11">10-11</time><span class="t"><b>账号 qiyu_2026 的历史动态整理</b><small>11 条日常内容，最早一条为 8 月 3 日</small></span></li>
+        <li><time datetime="2026-10-09">10-09</time><span class="t"><b>讨论区截图核验清单</b><small>5 项检查点，与本页体验指南互为补充</small></span></li>
+      </ul>
+      <div class="index-tags" style="margin-top:14px">
+        <a href="/#analysis">31 秒版本拼接证据</a>
+        <a href="/#faq">澄清视频逐帧记录</a>
+        <a href="/#guide">黑料截图真伪判断</a>
+        <a href="/#compare">两版本帧率差异</a>
+        <a href="/#comments">讨论样本原始措辞</a>
+        <a href="/#channels">付费入群传闻追踪</a>
+      </div>
+    </section>
+
+    <section class="block" id="quote">
+      <div class="sec-head"><h2>当事人原话摘录</h2><span class="kicker">引语卡 / 创作者证言</span></div>
+      <div class="grid-2">
+        <div class="card">
+          <p>“画面被剪接过，完整过程不是这样的。”<br><span class="meta">—— 46 秒澄清视频，11 月 2 日 20:10，第 12 秒处</span></p>
+        </div>
+        <div class="card">
+          <p>“从未建立任何收费群，相关传言不实。”<br><span class="meta">—— 11 月 5 日文字声明，第 3 段首句</span></p>
+        </div>
+        <div class="card">
+          <p>“已委托律师取证，将追究造谣者责任。”<br><span class="meta">—— 11 月 5 日文字声明，末段，未附函件编号</span></p>
+        </div>
+        <div class="card">
+          <p>“我们只确认收到了举报，处理结果以站内通知为准。”<br><span class="meta">—— 平台客服自动回复模板，10 月 17 日 09:40</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="faq">
+      <div class="sec-head"><h2>常见疑问</h2><span class="kicker">问答折叠</span></div>
+      <details class="faq">
+        <summary>喷水黑料 视频最早出现在哪个平台</summary>
+        <div class="ans">可核对的首次传播记录是 2026 年 10 月 14 日深夜，账号 qiyu_2026 在短视频区发布 18 秒片段，随后在 10 月 16 日 14:06 被搬运至两个聊天群。</div>
+      </details>
+      <details class="faq">
+        <summary>npxvip 官方账号发过哪些回应</summary>
+        <div class="ans">11 月 2 日发布 46 秒澄清视频，称画面经过剪辑；11 月 5 日再发 218 字文字声明，否认付费入群，并称已委托律师，但未出示函件编号。</div>
+      </details>
+      <details class="faq">
+        <summary>所谓的喷水黑料是否存在完整原片</summary>
+        <div class="ans">截至 11 月 8 日，公开渠道只有 18 秒与 31 秒两个版本。流传中的“3 分钟完整版”没有任何一方出示，也没有对应的文件哈希或截图，属于传闻。</div>
+      </details>
+      <details class="faq">
+        <summary>怎么判断黑料截图是不是伪造的</summary>
+        <div class="ans">先看状态栏与平台 UI 版本是否对应，再比字体行距和对话时间锚点，最后反向检索独特句子。10 月 12 日那张聊天截图因时间早于首传，可以直接排除。</div>
+      </details>
+      <details class="faq">
+        <summary>举报后平台一般多久处理</summary>
+        <div class="ans">举报回执 J-20261017-4471 显示 24 小时内受理，涉及隐私的加急通道承诺 6 小时响应。实际下架集中在 10 月 17 日到 10 月 21 日，处理结果为限制推荐而非删除。</div>
+      </details>
+      <details class="faq">
+        <summary>讨论喷水黑料时哪些行为会带来法律风险</summary>
+        <div class="ans">转发可识别面部的原始画面、公布当事人住址或手机号、以付费方式出售所谓原片，这三类在 2026 年的公开判例中均被认定为侵权或违法，判赔金额从 8000 元到 3.2 万元不等。</div>
+      </details>
+      <details class="faq">
+        <summary>31 秒版本多出的 13 秒内容能确认来源吗</summary>
+        <div class="ans">不能。多出部分无计时器，底噪频率与前半段不同，技术上只能确认“来自另一段素材”，无法确认拍摄时间、地点和拍摄者。</div>
+      </details>
+    </section>
+  </main>
+
+  <aside class="sidebar" aria-label="侧栏导航与辅助信息">
+    <div class="side-card">
+      <h3>本页导航</h3>
+      <ul id="sideNav">
+        <li><a href="/#overview">事件概览</a></li>
+        <li><a href="/#picks">精选核查</a></li>
+        <li><a href="/#latest">最新更新</a></li>
+        <li><a href="/#channels">分类入口</a></li>
+        <li><a href="/#analysis">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#compare">对照面板</a></li>
+        <li><a href="/#rank">可信度分层</a></li>
+        <li><a href="/#comments">用户评论</a></li>
+        <li><a href="/#related">相关资讯</a></li>
+        <li><a href="/#quote">原话摘录</a></li>
+        <li><a href="/#faq">常见疑问</a></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <h3>核对提示</h3>
+      <p>所有日期均在 2026 年 11 月 8 日之前。带“回执”“比对”字样的条目有公开痕迹；标为“传闻”“转述”的内容尚无凭证，引用时请注明性质。</p>
+      <p>示例数据说明：部分账号名、群成员数和分数为整理用示例，不构成对任何个人的事实认定。</p>
+    </div>
+    <div class="side-card">
+      <h3>相关长尾词</h3>
+      <ul>
+        <li><a href="/#analysis">31 秒版本拼接点在哪</a></li>
+        <li><a href="/#guide">黑料截图怎么验真伪</a></li>
+        <li><a href="/#latest">澄清视频发布时间线</a></li>
+        <li><a href="/#rank">举报回执编号怎么查</a></li>
+        <li><a href="/#faq">付费入群传闻有证据吗</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer class="site">
+  <div class="foot-in">
+    <div>
+      <div class="foot-brand">
+        <svg width="30" height="30" viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#0d1524"/>
+          <path d="M14 44c8-26 26-26 36-6" stroke="#4dc3ff" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <circle cx="47" cy="23" r="5" fill="#ffcf4d"/>
+        </svg>
+        <span class="brand-text">npxvip 喷水黑料</span>
+      </div>
+      <p>把公开材料按日期和来源排开，区分记录、回应、转述与推测，方便核对。正文更新时间 2026 年 11 月 8 日，对应新增的 31 秒版本比对表与 11 月 5 日声明条目。</p>
+    </div>
+    <div>
+      <h4>事件材料</h4>
+      <ul>
+        <li><a href="/#overview">事件概览</a></li>
+        <li><a href="/#picks">精选核查</a></li>
+        <li><a href="/#analysis">深度解析</a></li>
+        <li><a href="/#compare">对照面板</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>方法与工具</h4>
+      <ul>
+        <li><a href="/#guide">截图核对五步</a></li>
+        <li><a href="/#rank">可信度分层</a></li>
+        <li><a href="/#faq">常见疑问</a></li>
+        <li><a href="/#related">相关资讯</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>互动</h4>
+      <ul>
+        <li><a href="/#comments">用户评论样本</a></li>
+        <li><a href="/#quote">当事人原话</a></li>
+        <li><a href="/#channels">分类入口</a></li>
+        <li><a href="/#latest">最新更新</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>示例数据说明：账号名、群成员数、分数为整理用示例，不构成对任何个人的事实认定。</span>
+    <span>© 2026 争议材料整理 · 内容以公开痕迹为准</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.textContent = open ? '收起' : '菜单';
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A' && window.matchMedia('(max-width: 980px)').matches) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+        toggle.textContent = '菜单';
+      }
+    });
+  }
+
+  var top = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > 420) { top.classList.add('show'); }
+    else { top.classList.remove('show'); }
+    highlight();
+  }, {passive:true});
+  top.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+  });
+
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos = window.scrollY + 160;
+    var current = 0;
+    targets.forEach(function(t, i){
+      if (t && t.offsetTop <= pos) { current = i; }
+    });
+    sideLinks.forEach(function(a, i){
+      if (i === current) { a.classList.add('active'); }
+      else { a.classList.remove('active'); }
+    });
+  }
+  highlight();
+
+  // local search
+  var input = document.getElementById('siteSearch');
+  var result = document.getElementById('searchResult');
+  var items = Array.prototype.slice.call(document.querySelectorAll('main .card h3, main .list-compact .t b, main .faq summary, main .rank li span b, main .index-tags a'))
+    .map(function(el){
+      var txt = el.textContent.trim();
+      var host = el.closest('section');
+      return {text: txt, id: host ? host.id : ''};
+    }).filter(function(x){ return x.text; });
+
+  var seen = {};
+  items = items.filter(function(x){
+    if (seen[x.text]) return false;
+    seen[x.text] = 1;
+    return true;
+  });
+
+  function render(q){
+    result.innerHTML = '';
+    if (!q) { result.classList.remove('show'); return; }
+    var hits = items.filter(function(x){ return x.text.indexOf(q) !== -1; }).slice(0, 8);
+    if (!hits.length) {
+      var d = document.createElement('div');
+      d.className = 'empty';
+      d.textContent = '没有找到与“' + q + '”相关的条目，可试试“拼接”“澄清视频”“回执”。';
+      result.appendChild(d);
+    } else {
+      hits.forEach(function(h){
+        var a = document.createElement('a');
+        a.href = '/#' + h.id;
+        a.textContent = h.text;
+        a.setAttribute('role','option');
+        result.appendChild(a);
+      });
+    }
+    result.classList.add('show');
+  }
+
+  if (input) {
+    input.addEventListener('input', function(){ render(input.value.trim()); });
+    input.addEventListener('focus', function(){ if (input.value.trim()) render(input.value.trim()); });
+    document.addEventListener('click', function(e){
+      if (!result.contains(e.target) && e.target !== input) { result.classList.remove('show'); }
+    });
+    input.addEventListener('keydown', function(e){
+      if (e.key === 'Escape') { result.classList.remove('show'); input.blur(); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
